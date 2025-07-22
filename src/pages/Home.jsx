@@ -8,7 +8,7 @@ import { useEffect} from 'react';
 import { useNavigate } from 'react-router-dom';
 
 import AOS from 'aos';  //A-1(install aos)
-
+import AIChatWidget from '../components/AIChatWidget';
 const Home = () => {  //A-2
   useEffect(() => {
     AOS.init({ duration: 1000 });
@@ -18,6 +18,7 @@ const Home = () => {  //A-2
 
   return (
     <div >
+       <AIChatWidget />
       <div className=' bg-gradient-to-br from-white via-emerald-100 to-yellow-100 flex flex-col items-center lg:flex-row  lg:mt-[10px] pt-10 lg:gap-15 lg:pl-8 md:flex-col  md:mt-[2px]  md:py-10  md:gap-5   '>
  <div className="flex flex-col items-center justify-center  text-center px-4">
       
