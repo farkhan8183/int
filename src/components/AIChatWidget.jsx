@@ -8,7 +8,7 @@ const AIChatWidget = () => {
   const [userInput, setUserInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
-  const [isOpen, setIsOpen] = useState(true); // Default to open
+  const [isOpen, setIsOpen] = useState(false); // Default to open
   const [chatHistory, setChatHistory] = useState([
     {
       id: 1,
@@ -83,7 +83,7 @@ const AIChatWidget = () => {
 
   return (
     <>
-      {/* Always visible chat widget - not just an icon */}
+      
       <div className={`fixed bottom-6 right-6 z-50 transition-all duration-300 ${isOpen ? 'w-80 md:w-96' : 'w-24'}`}>
         {/* Closed State (Minimized) - More prominent */}
         {!isOpen && (
@@ -123,7 +123,7 @@ const AIChatWidget = () => {
               </div>
               <button 
                 onClick={() => setIsOpen(false)}
-                className="text-emerald-200 hover:text-white p-1 rounded-full hover:bg-emerald-700 transition-colors"
+                className="text-emerald-200 hover:text-white p-1 rounded-full hover:bg-emerald-700 transition-colors cursor-pointer"
                 aria-label="Close chat"
               >
                 <IoMdClose className="h-5 w-5" />

@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-
+import AIChatWidget from '../components/AIChatWidget';
 const Mission = () => {
   useEffect(() => {
     AOS.init({ duration: 1000 });
@@ -9,7 +9,7 @@ const Mission = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-white via-yellow-50 to-emerald-100 px-6 py-12 lg:px-32">
-      
+        <AIChatWidget />
       {/* Header */}
       <div className="text-center mb-16" data-aos="fade-down">
         <h1 className="text-4xl md:text-5xl font-extrabold text-emerald-900 drop-shadow-md">

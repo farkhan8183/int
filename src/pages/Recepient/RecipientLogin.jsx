@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import AIChatWidget from '../../components/AIChatWidget';
 
 const Reclogin = () => {
   const navigate = useNavigate();
@@ -37,7 +38,9 @@ const Reclogin = () => {
   };
 
   return (
+
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-emerald-100 via-white to-yellow-100 px-6 py-16">
+        <AIChatWidget />
       <div className="bg-white p-10 rounded-3xl shadow-2xl w-full max-w-md">
         <h2 className="text-3xl font-bold text-center text-emerald-800 mb-6">
           {isSignup ? 'Recipient Sign Up' : 'Recipient Login'}

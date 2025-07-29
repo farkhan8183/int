@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';  
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import AIChatWidget from '../components/AIChatWidget';
 
 const About = () => {
   useEffect(() => {
@@ -8,7 +9,7 @@ const About = () => {
   }, []);
   return (
     <div className="min-h-screen bg-gradient-to-br from-white via-emerald-100 to-yellow-100 px-6 py-12 lg:px-24">
-
+  <AIChatWidget />
      
    {/* ABOUT SECTION */}
 <div

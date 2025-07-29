@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import AIChatWidget from '../../components/AIChatWidget';
 
 const Vollogin = () => {
   const navigate = useNavigate();
@@ -64,6 +65,7 @@ const Vollogin = () => {
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-green-100 via-white to-yellow-100 px-4">
+        <AIChatWidget />
       <div className="bg-white shadow-2xl rounded-2xl p-6 sm:p-8 w-full max-w-md border border-gray-200">
         {/* Toggle Buttons */}
         <div className="flex justify-between mb-6">
